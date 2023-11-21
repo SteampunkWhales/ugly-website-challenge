@@ -1,0 +1,193 @@
+/* Header */
+/* navbar elements */
+
+.navbar{
+    background-color: black;
+    box-shadow: 10px 10px 10px rgb(153, 255, 0);
+    margin-bottom: 20px;
+}
+
+.nav-link{
+    margin: 0 10px;
+    font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(to right, red, rgb(0, 255, 0), blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#scroll-text-1{
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+#scroll-text-2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#scroll-text-3{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#scroll-text-4{
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+#scroll-text-5{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* H1 Equivalents */
+
+#not-h1{
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.title{
+    text-align: right;
+}
+
+/* body */
+
+body{
+    background-image: linear-gradient(red, rgb(0, 255, 0), blue);
+    margin: 0;
+    padding: 0;
+}
+
+#left-sidebar{
+    background-color: blue;
+}
+
+#right-sidebar{
+    background-color: red;
+}
+
+
+/* grid areas */
+#keyboard-div{
+    grid-area: keyboard;
+    box-shadow:
+        7px 7px 7px red,
+        -10px 0 0.4em rgb(0, 255, 0),
+        0 -10px 5px blue;
+    margin: 1em;
+}
+
+#gamer-sam-div{
+    grid-area: sam;
+    background-image: url("/img/gif/Ui00.gif");
+}
+
+#example-colors-div{
+    grid-area: colors;
+}
+
+#gamer-ipsum{
+    grid-area: ipsum;
+}
+
+#left-sidebar{
+    grid-area: left-bar;
+}
+
+#right-sidebar{
+    grid-area: right-bar;
+}
+
+/* define the grid */
+.main-container{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 3fr 3fr 1fr 0.5fr;
+    grid-template-areas: 
+    ". keyboard keyboard sam right-bar ."
+    ". left-bar colors colors right-bar ."
+    ". left-bar ipsum ipsum ipsum ."
+    
+}
+
+
+
+
+/* images */
+
+.title-gif{
+    width: 30px;
+    height: 30px;
+}
+
+#keyboard{
+    width: 100%;
+}
+
+
+#gamer-sam{
+    width: 100%;
+}
+
+.mirror{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#example-colors{
+    width: 100%;
+}
+
+/* left sidebar  */
+#left-sidebar{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-sidebar-img{
+    width: 100%;
+}
+
+/* right sidebar */
+#right-sidebar{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-sidebar-img{
+    width: 100%;
+}
+
+/* gamer ipsum / gamer manifesto */
+#gamer-ipsum{
+    background-color: black;
+    color:rgb(0, 255, 0);
+    margin: 5% 20% 0 0;
+    padding: 0 0 5% 20%;
+    box-shadow: 2rem 1rem 3rem rgb(0, 255, 0),
+                -2rem -1rem 3rem rgb(0, 255, 0);
+}
+
+.gamer{
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+
+}
+
+/* keyboard page */
+.product-listing-container{
+    display: flex;
+}
+
+.keyboard-listing-img{
+    width: 350px;
+}
+
+.product-details{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: rgb(0, 255, 0);
+}
